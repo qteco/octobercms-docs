@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'October CMS Docs',
     tagline: 'Documentatie voor het beheren van October CMS websites opgeleverd door Qteco',
-    url: 'https://qteco-octobercms-docs.github.io',
-    baseUrl: '/qteco-octobercms-docs.github.io/',
+    url: 'https://qteco.github.io',
+    baseUrl: '/octobercms-docs/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'qteco',
-    projectName: 'qteco-octobercms-docs.github.io',
+    projectName: 'octobercms-docs',
     trailingSlash: false,
 
     presets: [
