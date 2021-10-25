@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'October CMS Docs',
     tagline: 'Documentatie voor het beheren van October CMS websites opgeleverd door Qteco',
-    url: 'https://docs.qteco.nl',
-    baseUrl: '/',
+    url: 'https://qteco-octobercms-docs.github.io',
+    baseUrl: '/qteco-octobercms-docs.github.io/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'qteco',
-    projectName: 'octobercms-docs',
+    projectName: 'qteco-octobercms-docs.github.io',
+    trailingSlash: false,
 
     presets: [
         [
@@ -41,17 +42,11 @@ const config = {
                     alt: 'Qteco',
                     src: 'img/logo.svg',
                 },
-                items: [
-                    {
-                        href: 'https://github.com/qteco/octobercms-docs',
-                        label: 'GitHub',
-                        position: 'right',
-                    },
-                ],
+                items: [],
             },
             footer: {
                 style: 'light',
-                copyright: `&copy; ${new Date().getFullYear()} Qteco <a href="https://docusaurus.io" target="_blank">Built with Docusaurus</a>`,
+                copyright: `&copy; ${new Date().getFullYear()} Qteco - <a href="https://docusaurus.io" target="_blank">Built with Docusaurus</a>`,
             },
             prism: {
                 theme: lightCodeTheme,
