@@ -24,7 +24,6 @@ const config = {
                 docs: {
                     routeBasePath: '/',
                     sidebarPath: require.resolve('./sidebars.js'),
-                    //editUrl: 'https://github.com/qteco/octobercms-docs/edit/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -39,7 +38,7 @@ const config = {
             navbar: {
                 title: 'October CMS Docs',
                 logo: {
-                    alt: 'My Site Logo',
+                    alt: 'Qteco',
                     src: 'img/logo.svg',
                 },
                 items: [
