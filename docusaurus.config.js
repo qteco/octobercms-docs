@@ -53,6 +53,11 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
         }),
+
+    i18n: {
+        defaultLocale: 'nl',
+        locales: ['nl'],
+    },
 };
 
 module.exports = config;
