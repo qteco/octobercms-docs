@@ -4,8 +4,12 @@ Documentation website for Qteco-built October CMS websites, built with [Docusaur
 
 ### Installation
 
-1. Clone the `main` branch of this repository into your development environment.
-   **Note:** Never touch the `gh-pages` branch manually, this branch is used by GitHub Pages to display the production build of the documentation. The latest production build will automatically be committed to `gh-pages` when you deploy.
+1. Clone the `develop` branch of this repository into your development environment.
+
+**Note:** Always work in the `develop` branch. If you commit to the `main` branch, the changes will immediately be deployed to the production website.
+
+**Note:** Never commit the `gh-pages` branch directly, this branch is used by GitHub Pages to host the production build of the documentation. The latest production build will automatically be committed to `gh-pages` during deployment.
+
 2. Install the NPM dependencies:
 
 ```bash
@@ -34,15 +38,8 @@ This command generates static content into the `build` directory and can be serv
 npm run serve
 ```
 
-This command serves and opens up a browser window to test the production build.
+This command starts a local production server and opens up a browser window to test the production build.
 
 ### Deployment
 
-1. Generate a personal access token with the `repo` scope enabled, and keep it somewhere safe: https://github.com/settings/tokens/new?scopes=repo
-2. Deploy the website with the following command:
-
-```
-set GIT_USER=<your GitHub username>&& set CURRENT_BRANCH=main&& set DEPLOYMENT_BRANCH=gh-pages&& npm run deploy
-```
-
-3. You will be prompted for a password, do not enter your GitHub password but enter your personal access token instead.
+When you are happy with your changes, merge a pull request into the `main` branch and the website will automatically be deployed using GitHub Actions.
