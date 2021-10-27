@@ -1,10 +1,10 @@
 :root {
     --ifm-color-primary: #d70016;
-    --ifm-color-primary-dark: rgb(173, 0, 17);
-    --ifm-color-primary-darker: rgb(136, 1, 15);
-    --ifm-color-primary-darkest: rgb(97, 0, 10);
-    --ifm-color-primary-light: rgb(255, 14, 38);
-    --ifm-color-primary-lighter: rgb(255, 57, 77);
-    --ifm-color-primary-lightest: rgb(255, 108, 123);
+    --ifm-color-primary-dark: #c20014;
+    --ifm-color-primary-darker: #b70013;
+    --ifm-color-primary-darkest: #97000f;
+    --ifm-color-primary-light: #ed0018;
+    --ifm-color-primary-lighter: #f70019;
+    --ifm-color-primary-lightest: #ff1930;
     --ifm-code-font-size: 95%;
 }
