@@ -1,0 +1,98 @@
+---
+sidebar_position: 2
+---
+
+# Nieuwe contentpagina toevoegen
+
+![Pagina beheer](/img/contentpaginas/pagina-toevoegen.png)
+
+Er zijn 2 manieren om een contentpagina toe te voegen. Door linksboven op "Toevoegen" te klikken, of door met je cursor over een bestaande contentpagina te zweven en vervolgens op "Subpagina toevoegen" te klikken.
+
+-   Bij optie 1 wordt de contentpagina in het hoogste niveau toegevoegd
+-   Bij optie 2 wordt de contentpagina als sub-pagina aan een bestaande contentpagina toegevoegd
+
+Beschikbare acties wanneer je met je cursor over een contentpagina zweeft:  
+![Pagina beheer](/img/contentpaginas/pagina-bewerken-acties.png)
+
+## Invoervelden
+
+**Titel:**  
+De titel van de content, deze wordt in het tabblad van de webbrowser getoond.
+
+**URL:**  
+De URL van de pagina, die na de domeinnaam (bijv. qteco.nl) komt. De URL begint altijd met een "/", bijvoorbeeld: “/over-ons”.  
+De URL wordt automatisch gegenereerd op basis van de titel van de contentpagina, maar je kunt ook een andere URL invoeren.
+
+### Instellingen
+
+![Pagina beheer](/img/contentpaginas/pagina-toevoegen-instellingen.png)
+
+**Instellingen &rarr; Layout**  
+De layout die voor de pagina moet worden gebruikt.  
+De beschikbare layouts zijn maatwerk, dus deze kunnen per opgeleverde website afwijken.
+
+**Instellingen &rarr; Verborgen**  
+Wanneer deze optie is ingeschakeld kan de pagina alleen worden bekeken door gebruikers die in het CMS zijn ingelogd.
+
+**Instellingen &rarr; Verbergen in de navigatie**  
+Wanneer deze optie is ingeschakeld is de pagina nog steeds bereikbaar, maar worden verwijzingen naar de pagina in alle menu's verborgen.
+
+### Meta (SEO)
+
+![Meta (SEO)](/img/contentpaginas/pagina-toevoegen-meta.png)
+
+**Meta &rarr; Page title**  
+Gebruik dit veld als je in zoekmachine zoekresultaten een andere paginatitel wilt tonen. Als je dit veld niet invult wordt de paginatitel gebruikt die je bovenaan in het veld "Titel" hebt ingevuld. De aanbevolen lengte is 30 tot 60 tekens.
+
+**Meta &rarr; Page description**  
+Dit is de beschrijving van de pagina die in o.a. Google zoekresultaten wordt getoond. De aanbevolen lengte is 100 tot 160 tekens.  
+Voor meer informatie, zie de [Google Documentatie](https://developers.google.com/search/docs/advanced/crawling/consolidate-duplicate-urls).
+
+Voorbeeld van de meta tags in Google zoekresultaten:  
+![Voorbeeld van meta tags in Google zoekresultaten](/img/contentpaginas/pagina-toevoegen-meta-voorbeeld.png)
+
+**Meta &rarr; Canonical URL**  
+Als deze pagina via meerdere URLs kan worden bezocht kun je in dit veld de "meest belangrijke" URL invullen om te voorkomen dat deze pagina door zoekmachines als dubbele content wordt gemarkeerd.
+
+**Meta &rarr; Robots index**  
+Wanneer dit veld op "index" staat geef je zoekmachines toestemming om deze pagina te indexeren. Het is aanbevolen om dit op "index" te laten staan tenzij je niet wil dat deze pagina met zoekmachines kan worden gevonden.
+
+**Meta &rarr; Robots follow**  
+Wanneer dit veld op "follow" staat geef je zoekmachines toestemming om links op deze pagina te volgen. Het is aanbevolen om dit op "follow" te laten staan tenzij je niet wil dat de links op deze pagina worden geïndexeerd.
+
+**Meta &rarr; Advanced robots**  
+Geavanceerde "robots" meta opties. Niet aanbevolen om aan te passen. Zie [Google documentatie](https://developers.google.com/search/docs/advanced/robots/robots_meta_tag) voor alle mogelijke opties.
+
+### Sitemap (SEO)
+
+![Sitemap (SEO)](/img/contentpaginas/pagina-toevoegen-sitemap.png)
+
+**Sitemap &rarr; Enable in the sitemap.xml**  
+Wanneer deze optie is ingeschakeld wordt de pagina in de sitemap opgenomen.
+
+**Sitemap &rarr; Use "updated_at" from the model as "Last time modified"**  
+Wanneer deze optie is ingeschakeld wordt het "lastmod" attribuut van het sitemap-item automatisch ingevuld met het laatste moment dat de pagina is aangepast.
+
+**Sitemap &rarr; Last time modified**  
+Wanneer "Use "updated_at" from the model as "Last time modified"" niet is ingeschakeld kun je dit veld gebruiken om het "lastmod" attribuut van het sitemap-item handmatig in te stellen.
+
+**Sitemap &rarr; Changing frequency**  
+Hoe vaak de inhoud van de pagina gemiddeld wordt aangepast. Wordt gebruikt voor het "changefreq" attribuut van het sitemap-item. Vul dit zo nauwkeurig mogelijk in.
+
+**Sitemap &rarr; Priority**  
+Hoe "belangrijk" de inhoud van deze pagina is voor je website, in een getal van 0.1 tot 1.0. Wordt gebruikt voor het "priority" attribuut van het sitemap-item.
+
+Voorbeeld van een sitemap-item:  
+![Voorbeeld van een sitemap-item](/img/contentpaginas/pagina-toevoegen-sitemap-voorbeeld.png)
+
+:::tip
+
+Je kunt de sitemap van je website controleren door naar naar [je domeinnaam]/sitemap.xml te gaan, dus bijv. https://qteco.nl/sitemap.xml
+
+:::
+
+:::info
+
+De invoervelden voor de daadwerkelijke content van de pagina zijn afhandelijk van de layout. De beschikbare layouts zijn maatwerk, dus deze kunnen per opgeleverde website afwijken.
+
+:::
